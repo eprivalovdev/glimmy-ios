@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Glimmy Privacy Policy</title>
-  <meta name="description" content="Glimmy collects nothing. Eye tracking happens on your iPhone and nothing is saved or sent.">
+  <meta name="description" content="Eye tracking happens on your iPhone and nothing from the camera is saved or sent. Anonymous usage counts and crash reports only.">
   <meta name="theme-color" content="#FFFFFF">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -35,10 +35,10 @@
     </div>
   </section>
   <div class="wrap doc">
-    <nav class="toc" aria-label="On this page"><span class="footnote">On this page</span><ol><li><a href="#camera">The camera and your face</a></li><li><a href="#device">What stays on your iPhone</a></li><li><a href="#reminders">Reminders</a></li><li><a href="#purchases">Purchases</a></li><li><a href="#network">Network use</a></li><li><a href="#not">What the developer does not do</a></li><li><a href="#delete">Deleting your data</a></li><li><a href="#children">Children</a></li><li><a href="#site">This website</a></li><li><a href="#changes">Changes and contact</a></li></ol></nav>
+    <nav class="toc" aria-label="On this page"><span class="footnote">On this page</span><ol><li><a href="#camera">The camera and your face</a></li><li><a href="#device">What stays on your iPhone</a></li><li><a href="#reminders">Reminders</a></li><li><a href="#purchases">Purchases</a></li><li><a href="#stats">Usage statistics and crash reports</a></li><li><a href="#network">Network use</a></li><li><a href="#not">What the developer does not do</a></li><li><a href="#delete">Deleting your data</a></li><li><a href="#children">Children</a></li><li><a href="#site">This website</a></li><li><a href="#changes">Changes and contact</a></li></ol></nav>
     <article class="prose">
-      <p class="meta">Effective date: November 24, 2026</p>
-      <div class="short" id="short"><p><strong>Short version:</strong> Glimmy collects nothing. There is no account, no server, no analytics, no ads and no tracking. Your breaks and settings stay on your iPhone. If you allow the camera, Glimmy looks at your eyes during a break to play along, then forgets what it saw: nothing is recorded, saved or sent anywhere.</p></div>
+      <p class="meta">Effective date: November 25, 2026</p>
+      <div class="short" id="short"><p><strong>Short version:</strong> There is no account, no ads and no tracking. Your breaks and settings stay on your iPhone. If you allow the camera, Glimmy looks at your eyes during a break to play along, then forgets what it saw: nothing from the camera is recorded, saved or sent anywhere. To find bugs and see which breaks people use, Glimmy sends anonymous usage counts and crash reports through Google Firebase. They are not linked to your name or Apple Account and are never used for advertising.</p></div>
 
       <h2 id="camera">The camera and your face</h2>
       <p>Glimmy asks for the camera only when you choose to turn on eye tracking (during setup or in Settings). Breaks never ask for it, and everything works without it.</p>
@@ -55,22 +55,31 @@
       <h2 id="purchases">Purchases</h2>
       <p>Glimmy Plus subscriptions and the one-time purchase are handled by Apple through the App Store. The developer does not receive your name, payment details or Apple Account. Glimmy only asks the App Store whether your purchase is active.</p>
 
+      <h2 id="stats">Usage statistics and crash reports</h2>
+      <p>Glimmy uses Google Firebase Analytics and Firebase Crashlytics. They help the developer see which breaks are used and fix crashes. What is sent:</p>
+      <ul>
+        <li>A few app events: a break started, finished or ended early (which break, how long, and whether eye tracking was on, as a yes or no), the Plus screen shown, a purchase or restore completed, reminders turned on or off, a mix saved, setup finished.</li>
+        <li>Crash reports: where in the code the app crashed, the iPhone model, iOS version and app version.</li>
+        <li>A random ID that Firebase creates for this installation of Glimmy, so events from one install can be counted together. It is not your Apple Account, it is not the advertising identifier, and it changes if you delete and reinstall the app.</li>
+      </ul>
+      <p>Nothing from the camera is ever sent: no images, no face data, no gaze data. Glimmy does not use the advertising identifier, does not ask to track you, and turns off Google&rsquo;s ad personalization signals. The data is processed by Google under the <a href="https://firebase.google.com/support/privacy">Firebase privacy and security terms</a>. Detailed analytics events are kept for two months and crash reports for 90 days. They are used only to improve Glimmy.</p>
+
       <h2 id="network">Network use</h2>
-      <p>Glimmy does not call any server run by the developer. The only connections it makes are to the App Store (to load prices, buy and restore purchases) and, when you tap a link, to this website.</p>
+      <p>Glimmy does not call any server run by the developer. It connects to the App Store (to load prices, buy and restore purchases), to Google Firebase (the usage counts and crash reports above) and, when you tap a link, to this website.</p>
 
       <h2 id="not">What the developer does not do</h2>
       <ul>
-        <li>Does not collect, receive, sell or share your personal data.</li>
-        <li>Does not use analytics, crash-reporting or advertising SDKs.</li>
+        <li>Does not sell or share your personal data, and does not ask for your name, email or Apple Account.</li>
+        <li>Does not use advertising SDKs or the advertising identifier.</li>
         <li>Does not track you across apps or websites.</li>
         <li>Does not run a backend that stores your information.</li>
       </ul>
 
       <h2 id="delete">Deleting your data</h2>
-      <p>Deleting Glimmy from your iPhone removes everything it stored there, including your break history and the calibration numbers. Nothing remains with the developer, because nothing was ever sent.</p>
+      <p>Deleting Glimmy from your iPhone removes everything it stored there, including your break history and the calibration numbers. The anonymous usage counts and crash reports already sent stay in Firebase until they expire; they cannot be tied back to you, but if you want them removed, write to the address below with the approximate date you used the app.</p>
 
       <h2 id="children">Children</h2>
-      <p>Glimmy is not directed at children under 13, and the developer does not knowingly collect data from anyone.</p>
+      <p>Glimmy is not directed at children under 13, and the developer does not knowingly collect personal information from children.</p>
 
       <h2 id="site">This website</h2>
       <p>This site is hosted on GitHub Pages. It uses no cookies and no analytics. GitHub may process standard server logs under its own privacy statement.</p>
